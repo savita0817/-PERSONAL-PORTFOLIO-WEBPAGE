@@ -141,6 +141,9 @@ Your project is a **personal portfolio website** for showcasing your skills, exp
 | Font Awesome | Additional icons | [FontAwesome CDN](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css) |
 
 ---
+![Image](https://github.com/user-attachments/assets/30ab56de-f077-40c8-8ad8-bbc0d4244f42)
+![Image](https://github.com/user-attachments/assets/0a9b41c2-53ff-490c-90ad-c640101d7753)
+![Image](https://github.com/user-attachments/assets/0a1f4565-f333-48bc-a861-5536e0a59834)
 
 ## **5. Areas for Improvement**
 - **Project 3 Placeholder:** Needs a real project with a description and live link.
