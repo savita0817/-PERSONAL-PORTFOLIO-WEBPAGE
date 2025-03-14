@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savita Gupta - Web Designer & Developer</title>
+
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Link to AOS (Animate on Scroll) -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Icon Library -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Font Awesome (for social icons) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Hero Section */
+        #hero {
+            height: 100vh;
+            background: url('back.jpg') no-repeat center center/cover;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .typed {
+            font-weight: bold;
+            color: #f1c40f;
+            font-size: 1.5rem;
+        }
+
+        .social-link a {
+    margin: 0 15px;
+    color: white;
+    font-size: 2rem; /* Increase size for bigger icons */
+    transition: all 0.3s ease;
+}
+
+.social-link a:hover {
+    transform: scale(1.2);
+    color: #f1c40f;
+}
+
+
+        .social-link a:hover {
+            transform: scale(1.2);
+            color: #f1c40f;
+        }
+
+        /* Portfolio Section */
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease;
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .portfolio-info {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .portfolio-item:hover .portfolio-info {
+            opacity: 1;
+        }
+
+        /* Contact Form Focus Effects */
+        .form-control:focus {
+            border-color: #f1c40f;
+            box-shadow: 0 0 5px #f1c40f;
+        }
+
+        .btn-primary:hover {
+            background-color: #f1c40f;
+            border-color: #f1c40f;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            #hero h1 {
+                font-size: 2rem;
+            }
+
+            .portfolio-item img {
+                height: 200px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Savita Gupta</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section id="hero" class="hero">
+    <div class="container text-center">
+        <h1>Hi, I'm Savita Gupta</h1>
+        <p>"I'm a <span class="typed" data-typed-items="UI/UX Designer, Web Developer">UI/UX Designer</span></p>
+        <p class="lead">Creating responsive websites and focusing on user experience.</p>
+        <a href="#portfolio" class="btn btn-primary">View My Work</a> <!-- CTA -->
+        <div class="social-link">
+            <a href="https://www.linkedin.com/in/savita-gupta-01900b264" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://twitter.com/savitagupta" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.instagram.com/savitagupta" target="_blank"><i class="bi bi-instagram"></i></a>
+        </div>
+        
+    </div>
+</section>
+
+
+<!-- About Section -->
+<section id="about" class="section py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">About Me</h2>
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <img src="mee.jpg" alt="Savita Gupta" class="img-fluid rounded-circle">
+            </div>
+            <div class="col-lg-8">
+                <h3>UI/UX Designer & Developer</h3>
+                <p>"I am Savita. Passionate about creating responsive and user-friendly websites and applications."</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul>
+                            <li><strong>Birthday:</strong> 08 May 2004</li>
+                            <li><strong>Phone:</strong> +91 81044 83550</li>
+                            <li><strong>City:</strong> Navi Mumbai, Maharashtra</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li><strong>Age:</strong> 20</li>
+                            <li><strong>Degree:</strong> BCA</li>
+                            <li><strong>Email:</strong> savitagupta@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="section light-background py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Portfolio</h2>
+        <div class="row gy-4">
+           <!-- projects  -->
+            <section id="portfolio" class="portfolio section light-background">
+                <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+                    <h2>Portfolio</h2>
+                    <p>Here are some of the projects I have worked on.</p>
+                </div>
+            
+                <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div class="row gy-4 justify-content-center">
+                        <!-- Portfolio Item 1 -->
+                        <div class="col-md-4">
+                            <div class="portfolio-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                                <img src="cake2.webp" alt="Project 1" class="img-fluid">
+                                <div class="portfolio-info">
+                                    <h4>Project 1</h4>
+                                    <p>It is cake website and html ad css is used  only.</p>
+                                    <a href="https://github.com/savita0817/My_first_p/blob/main/README.md" target="_blank" class="btn btn-primary">View Live Project</a>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Portfolio Item 2 -->
+                        <div class="col-md-4">
+                            <div class="portfolio-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                                <img src="bg.jpg" alt="Project 2"   heclass="img-fluid">
+                                <div class="portfolio-info">
+                                    <h4>Project 2</h4>
+                                    <p>It is movie info website taking info from API .</p>
+                                    <a href="https://github.com/savita0817/Movie-Info/blob/main/README.md" target="_blank" class="btn btn-primary">View Live Project</a>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Portfolio Item 3 -->
+                        <div class="col-md-4">
+                            <div class="portfolio-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                                <img src="project3.jpg" alt="Project 3" class="img-fluid">
+                                <div class="portfolio-info">
+                                    <h4>Project 3</h4>
+                                    <p>A brief description of the project and the technologies used.</p>
+                                    <a href="https://link-to-live-project.com" target="_blank" class="btn btn-primary">View Live Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Add more projects as needed -->
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Me</h2>
+        <form action="#" method="POST">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" name="name" placeholder="Your Name" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" name="email" placeholder="Your Email" class="form-control" required>
+                </div>
+                <div class="col-12">
+                    <textarea name="message" placeholder="Your Message" class="form-control" rows="5" required></textarea>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-light py-4">
+    <div class="container text-center">
+        <p>&copy; 2025 Savita Gupta. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</body>
+</html>
